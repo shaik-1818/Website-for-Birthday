@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#3b1227" />
+  <title>For Fannu, with all my love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="loader"><span>preparing something lovely</span><i></i></div>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="sparkle-field" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="monogram" href="#welcome" aria-label="Back to welcome">M<span>♥</span>F</a>
+    <div class="progress-label"><span id="chapterNumber">01</span> <span class="progress-line"></span> <span>08</span></div>
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Toggle ambient music"><span class="music-bars"><i></i><i></i><i></i></span><span>sound on</span></button>
+  </header>
+
+  <div class="page-indicator" aria-live="polite">
+    <span class="page-label">Page</span>
+    <span id="pageCurrent">01</span>
+    <span class="page-divider">/</span>
+    <span id="pageTotal">08</span>
+  </div>
+
+  <nav class="chapter-nav" aria-label="Birthday chapters">
+    <a href="#welcome" class="chapter-dot active" aria-label="Welcome"><span>01</span></a>
+    <a href="#birthday" class="chapter-dot" aria-label="Birthday"><span>02</span></a>
+    <a href="#letter" class="chapter-dot" aria-label="Love letter"><span>03</span></a>
+    <a href="#reasons" class="chapter-dot" aria-label="Reasons"><span>04</span></a>
+    <a href="#roses" class="chapter-dot" aria-label="Roses"><span>05</span></a>
+    <a href="#teddy" class="chapter-dot" aria-label="Teddy"><span>06</span></a>
+    <a href="#love" class="chapter-dot" aria-label="Love"><span>07</span></a>
+    <a href="#finale" class="chapter-dot" aria-label="Finale"><span>08</span></a>
+  </nav>
+
+  <main>
+    <section class="chapter welcome" id="welcome">
+      <div class="petal-stream" aria-hidden="true"><i>✦</i><i>♥</i><i>✦</i><i>♥</i><i>✧</i><i>♥</i></div>
+      <div class="chapter-copy reveal-up">
+        <p class="eyebrow">a little birthday universe, made for</p>
+        <h1 class="hero-name">Fannu Maa❤️<span class="name-dot">.</span></h1>
+        <p class="welcome-note">There is a small constellation of things I want to tell you.<br />Come a little closer.</p>
+        <button class="button button-primary open-surprise" type="button" data-next="#birthday"><span>Open your surprise</span><b>↗</b></button>
+      </div>
+      <div class="welcome-seal"><span>made</span><strong>with<br />love</strong><span>by Moula</span></div>
+      <div class="scroll-cue"><span>scroll gently</span><i></i></div>
+    </section>
+
+    <section class="chapter birthday" id="birthday">
+      <div class="confetti-burst" aria-hidden="true"></div>
+      <div class="balloon balloon-a">F</div><div class="balloon balloon-b">♥</div><div class="balloon balloon-c">F</div>
+      <div class="split-layout birthday-layout">
+        <div class="chapter-copy reveal-up">
+          <p class="eyebrow">chapter two · the big one</p>
+          <h2>Happy Birthday<br /><em>Fannu Maa!</em></h2>
+          <p class="body-copy">Today the whole world gets to celebrate the day it became brighter. I hope this year brings you the kind of joy you give so effortlessly to everyone around you.</p>
+          <div class="tiny-note"><span>20</span> today looks beautiful on you</div>
+        </div>
+        <div class="cake-scene reveal-up">
+          <div class="cake-glow"></div>
+          <div class="cake">
+            <div class="flame" id="flame"><span></span></div><div class="wick"></div>
+            <div class="cake-top"><span class="berry berry-one"></span><span class="berry berry-two"></span><span class="icing-drip"></span></div>
+            <div class="cake-middle"></div><div class="cake-base"></div><div class="cake-plate"></div>
+          </div>
+          <button class="blow-button" id="blowButton" type="button">make a wish <span>✧</span></button>
+          <p class="cake-message" id="cakeMessage">Tap to blow out the candle</p>
+        </div>
+      </div>
+      <button class="chapter-arrow next" type="button" data-next="#letter" aria-label="Next chapter">↓</button>
+    </section>
+
+    <section class="chapter letter" id="letter">
+      <div class="letter-hearts" aria-hidden="true"><i>♥</i><i>♥</i><i>♡</i><i>♥</i></div>
+      <div class="heart-balloons" aria-hidden="true"><span>♥</span><span>♥</span><span>♥</span></div>
+      <div class="letter-left-photo-side">
+        <div class="letter-photo-frame"><img src="images/F8.jpeg" alt="Fannu and Moula together" /></div>
+      </div>
+      <div class="letter-photo-side">
+        <div class="letter-photo-frame"><img src="images/F1.jpeg" alt="Fannu and Moula together" /></div>
+        
+      </div>
+      <div class="envelope-wrap reveal-up" id="envelopeWrap">
+        <div class="envelope-label">a letter, folded just for you</div>
+        <button class="envelope" id="envelope" type="button" aria-label="Open the love letter">
+          <div class="envelope-back"></div><div class="letter-paper"><div class="letter-inner"><span class="letter-date">for my favourite person</span><p>Dear Fannu,</p><p class="letter-preview">I keep trying to find the perfect words for you. The truth is, you make ordinary days feel like something worth remembering...</p><span class="read-more">open me <b>↗</b></span></div></div><div class="envelope-front"></div><div class="envelope-flap"></div><div class="wax-seal">M<span>♥</span></div>
+        </button>
+        <p class="envelope-hint">tap the seal to open</p>
+      </div>
+      <div class="full-letter" id="fullLetter">
+        <span class="letter-date">[28-09-2026]</span>
+        <h2>Dear Fannu,</h2>
+        <!-- EDIT HERE: Replace this letter with your own words. -->
+        <p>Happiest Birthday to you ma 💕 may Allah bless you always with good health and happiness 💖 being a caring person to me ❤️ be happy enjoy alot ✨ in your life i am the one as part of your life 💞 apki har hamesha khush rahana Allah har Dua ko khubul karna 🤗💖 Har hamesha Allah apkey saat rahengey stay bless and happy ❤️</p>
+            <p></p>
+            <p>Make sure that this Birthday we never forgot ✨ hamare 6 years of love mey a birthday apko jindagi par khayal rahegi ma 💞 Once again Happiest Birthday meri Jaanu💖.</p>
+        <p class="signature">Always yours,<br /><strong>Moula</strong></p>
+      </div>
+      <button class="chapter-arrow next" type="button" data-next="#reasons" aria-label="Next chapter">↓</button>
+    </section>
+
+    <section class="chapter reasons" id="reasons">
+      <div class="reasons-teddies" aria-hidden="true"><span>ʕ•ᴥ•ʔ</span><span>ʕ•ᴥ•ʔ</span></div>
+      <div class="reasons-flowers" aria-hidden="true"><i>✿</i><i>❀</i><i>✾</i><i>✿</i><i>❀</i></div>
+      <div class="section-heading reveal-up"><p class="eyebrow">chapter four · a growing list</p><h2>Reasons I love <em>you.</em></h2><p>There are more than I could fit on one little screen.</p></div>
+      <div class="reason-carousel reveal-up">
+        <!-- EDIT HERE: Replace each card's text and image placeholder when ready. -->
+        <article class="reason-card card-1"><div class="card-number">01</div><div class="photo-placeholder"><img src="images/F5.jpeg"></div><div class="card-bottom"><h3>My favourite eyes</h3><span>♡</span></div></article>
+        <article class="reason-card card-2"><div class="card-number">02</div><div class="photo-placeholder"><img src="images/F6.jpeg"></div><div class="card-bottom"><h3>Your are my one</h3><span>♡</span></div></article>
+        <article class="reason-card card-3"><div class="card-number">03</div><div class="photo-placeholder"><img src="images/F2.jpeg"></div><div class="card-bottom"><h3>With you, even quiet feels full.</h3><span>♡</span></div></article>
+      </div>
+      <div class="carousel-controls"><button id="prevReason" type="button" aria-label="Previous reason">←</button><span><b id="reasonIndex">01</b> / 03</span><button id="nextReason" type="button" aria-label="Next reason">→</button></div>
+      <button class="chapter-arrow next" type="button" data-next="#roses" aria-label="Next chapter">↓</button>
+    </section>
+
+    <section class="chapter roses" id="roses">
+      <div class="rose-petals" aria-hidden="true"><i>✦</i><i>❀</i><i>✦</i><i>❀</i><i>✧</i></div>
+      <div class="rose-copy reveal-up"><p class="eyebrow">chapter five · just because</p><h2>For the girl<br />who makes life <em>bloom.</em></h2><p class="body-copy">I would send you every flower in the world, but these ones can stay with you a little longer.</p><span class="stem-line"></span><p class="tiny-note">one for every little thing I adore</p></div>
+      <div class="bouquet reveal-up"><div class="bouquet-paper"></div><div class="rose rose-left"><span class="bloom">✿</span><i></i></div><div class="rose rose-center"><span class="bloom">✿</span><i></i></div><div class="rose rose-right"><span class="bloom">✿</span><i></i></div><div class="leaf leaf-left"></div><div class="leaf leaf-right"></div></div>
+      <button class="chapter-arrow next" type="button" data-next="#teddy" aria-label="Next chapter">↓</button>
+    </section>
+
+    <section class="chapter teddy" id="teddy">
+      <div class="teddy-copy reveal-up"><p class="eyebrow">chapter six · your tiny guardian</p><h2>A little<br /><em>hug</em> for you.</h2><p class="body-copy">Whenever I cannot be right beside you, let this little one remind you that you are held, adored, and very much on my mind.</p></div>
+      <div class="teddy-stage reveal-up"><div class="teddy-bear" id="teddyBear"><div class="boy-fallback"><div class="boy-balloon"><span>♥<b>F</b></span><i></i></div><div class="reference-boy"><div class="boy-hood"></div><div class="boy-head"><div class="boy-hair"></div><span class="boy-eye boy-eye-left"></span><span class="boy-eye boy-eye-right"></span><span class="boy-smile"></span></div><div class="boy-body"><span class="boy-inner-shirt"></span><span class="boy-zip"></span><span class="boy-pocket"></span></div><span class="boy-arm boy-arm-left"><i class="boy-hand"></i></span><span class="boy-arm boy-arm-right"><i class="boy-hand"></i></span><div class="boy-leg boy-leg-left"></div><div class="boy-leg boy-leg-right"></div><div class="boy-shoe boy-shoe-left"></div><div class="boy-shoe boy-shoe-right"></div></div></div><div class="boy-3d-view" id="boy3d" aria-hidden="true"></div></div><span class="teddy-shadow"></span><button class="button button-small" id="hugButton" type="button">send a hug <span>↗</span></button><p id="hugMessage">tap the boy</p></div>
+      <button class="chapter-arrow next" type="button" data-next="#love" aria-label="Next chapter">↓</button>
+    </section>
+
+    <section class="chapter love" id="love">
+      <div class="heart-field" aria-hidden="true"><i>♥</i><i>♥</i><i>♥</i><i>♥</i><i>♥</i><i>♥</i></div>
+      <div class="love-content reveal-up"><p class="eyebrow">chapter seven · very important question</p><div class="beating-heart">♥</div><h2>Do you<br /><em>love me?</em></h2><p class="love-subtitle">There is only one correct answer.</p><div class="answer-buttons"><button class="button button-primary" id="yesButton" type="button">Yes, obviously <span>♥</span></button><button class="button button-ghost" id="yesBiggerButton" type="button">Yes but bigger</button></div><p class="answer-response" id="answerResponse"></p></div>
+      <button class="chapter-arrow next" type="button" data-next="#finale" aria-label="Next chapter">↓</button>
+    </section>
+
+    <section class="chapter finale" id="finale">
+      <div class="fireworks" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="final-content reveal-up"><p class="eyebrow">the last page, for now</p><p class="final-prelude">My favourite place is wherever you are.</p><h2>I love you,<br /><em>Fannu Maa❤️</em></h2><div class="final-rule"><span></span> ♥ <span></span></div><p class="final-wish">Happy Birthday to the most wonderful person in my world.</p><p class="final-signature">with all my heart,<br /><strong>Moula</strong></p><button class="button button-ghost replay-button" type="button" data-next="#welcome">read it again ↺</button></div>
+      <div class="final-petals" aria-hidden="true">♥　✦　♥　✧　♥　✦　♥</div>
+    </section>
+  </main>
+  <audio id="backgroundMusic" src="song/Song2.mpeg" autoplay loop preload="auto"></audio>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
